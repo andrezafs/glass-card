@@ -1,0 +1,21 @@
+
+@mixin font-style ($size, $weigth, $color) {
+    font-size:$size;
+    font-weight:$font-weigth;
+    color :$color;
+}
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin size ($width, $heigth) {
+    width: $width;
+    height: $heigth;
+}
+
+%rotate {
+    transform: rotate(-50deg);
+}
+
