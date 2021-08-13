@@ -22,23 +22,17 @@ img {
             top: 10rem;
             left: 10rem;
             border-radius: 50%;
-            background: linear-gradient(90deg, rgba(118,224,231,1) 20%, rgba(118,224,231,1) 100%);
+            background: rgb(184, 177, 177);
             
         }
 
         &::before {
             content: "";
             position: absolute;
-            top: -10em;
-            left: 25rem;
+            top: -5em;
+            left: 23rem;
 
-            background: linear-gradient(
-                90deg,
-                rgba(242, 137, 114, 0.7382645803698435) 20%,
-                rgba(242, 137, 114, 1) 100%
-            );
-            // background:#F28972;
-            // background-color:rgb(35, 219, 213);
+        background: white;
             width: 10rem;
             height: 10rem;
             border-radius: 50%;

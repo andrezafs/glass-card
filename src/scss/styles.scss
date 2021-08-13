@@ -37,5 +37,10 @@ header, .main-container {
 
 .main-container {
   height: 100vh;
+ 
 }
 
+.container {
+  background: rgb(7,7,77);
+  background: linear-gradient(90deg, rgba(7,7,77,1) 5%, rgba(20,40,212,1) 47%, rgba(0,144,255,1) 87%);
+}

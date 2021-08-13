@@ -52,7 +52,7 @@
   justify-content: space-between;
 }
 
-h3, h2, h1 {
+.container-card h3, .container-card h2, .container-card h1 {
   font-weight: 400;
   color: transparent;
   text-shadow: 0rem 0.1rem 0 rgba(17, 16, 16, 0.17);
@@ -76,26 +76,32 @@ h3, h2, h1 {
   justify-content: space-between;
 }
 
-h3, h2, h1 {
+.container-card h3, .container-card h2, .container-card h1 {
   font-weight: 400;
   color: transparent;
   text-shadow: 0rem 0.1rem 0 rgba(17, 16, 16, 0.17);
 }
 
-h1 {
+.container-card h1 {
   font-size: 1.6rem;
   font-family: "PT Sans", sans-serif;
 }
-
-h2 {
+.container-card h2 {
   font-size: 1.4rem;
   text-transform: uppercase;
 }
-
-h4 {
+.container-elements {
+  color: white;
+  text-align: right;
   font-family: "Poppins", sans-serif;
-  font-size: 5rem;
+}
+.container-elements .text h1 {
+  font-size: 3.5rem;
   font-weight: 700;
+}
+.container-elements .text p {
+  font-weight: 400;
+  font-size: 3rem;
 }
 
 @keyframes orbit {
@@ -135,14 +141,14 @@ img {
   top: 10rem;
   left: 10rem;
   border-radius: 50%;
-  background: linear-gradient(90deg, #76e0e7 20%, #76e0e7 100%);
+  background: #b8b1b1;
 }
 .container-card .circle::before {
   content: "";
   position: absolute;
-  top: -10em;
-  left: 25rem;
-  background: linear-gradient(90deg, rgba(242, 137, 114, 0.7382645804) 20%, #f28972 100%);
+  top: -5em;
+  left: 23rem;
+  background: white;
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
@@ -200,26 +206,32 @@ img {
   justify-content: space-between;
 }
 
-h1, h2, h3 {
+.container-card h1, .container-card h2, .container-card h3 {
   font-weight: 400;
   color: transparent;
   text-shadow: 0rem 0.1rem 0 rgba(17, 16, 16, 0.17);
 }
 
-h1 {
+.container-card h1 {
   font-size: 1.6rem;
   font-family: "PT Sans", sans-serif;
 }
-
-h2 {
+.container-card h2 {
   font-size: 1.4rem;
   text-transform: uppercase;
 }
-
-h4 {
+.container-elements {
+  color: white;
+  text-align: right;
   font-family: "Poppins", sans-serif;
-  font-size: 5rem;
+}
+.container-elements .text h1 {
+  font-size: 3.5rem;
   font-weight: 700;
+}
+.container-elements .text p {
+  font-weight: 400;
+  font-size: 3rem;
 }
 
 .card .card-front, .card .card-back {
@@ -240,7 +252,7 @@ h4 {
   justify-content: space-between;
 }
 
-h1, h2, h3 {
+.container-card h1, .container-card h2, .container-card h3 {
   font-weight: 400;
   color: transparent;
   text-shadow: 0rem 0.1rem 0 rgba(17, 16, 16, 0.17);
@@ -256,6 +268,11 @@ header, .main-container {
 
 .main-container {
   height: 100vh;
+}
+
+.container {
+  background: #07074d;
+  background: linear-gradient(90deg, #07074d 5%, #1428d4 47%, #0090ff 87%);
 }
 
 /*# sourceMappingURL=styles.css.map */
