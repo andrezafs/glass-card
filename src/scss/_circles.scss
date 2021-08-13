@@ -1,0 +1,27 @@
+.circle { 
+    animation: orbit 60s ease-out infinite;
+    position: absolute;
+    width: 40rem;
+    height: 50%;
+
+    .top {
+        position: relative;
+        background: linear-gradient(90deg, rgba(118,224,231,1) 20%, rgba(118,224,231,1) 100%);
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        top: 10rem
+    }
+    .bottom {
+        position: absolute;
+        right:2rem;
+       
+        background: linear-gradient(90deg, rgba(242,137,114,0.7382645803698435) 20%, rgba(242,137,114,1) 100%);
+        // background:#F28972;
+        // background-color:rgb(35, 219, 213);
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        bottom: 5rem;
+    }
+}
