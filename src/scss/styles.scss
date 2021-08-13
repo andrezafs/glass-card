@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'animations';
+@import 'card';
 @import 'circles';
 @import 'fonts';
 @import 'header';
@@ -7,23 +8,33 @@
 @import 'mixins';
 
     
-.container {
-    // transform: rotateY(180deg);
-    overflow: hidden;
-    perspective: 100rem;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: center;
-    background: #193B59;
-    // background:#003F63;
-    // background: #705E78;
-    // background: rgb(27,185,180);
-    // background: linear-gradient(90deg, rgba(27,185,180,1) 7%, rgba(83,222,233,1) 57%, rgba(81,222,233,0.9531162806919643) 96%);
+// .container {
+//     // transform: rotateY(180deg);
+//     overflow: hidden;
+//     perspective: 100rem;
+//     height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     align-items: center;
+//     justify-content: center;
+//     background: #193B59;
+//     // background:#003F63;
+//     // background: #705E78;
+//     // background: rgb(27,185,180);
+//     // background: linear-gradient(90deg, rgba(27,185,180,1) 7%, rgba(83,222,233,1) 57%, rgba(81,222,233,0.9531162806919643) 96%);
 
  
+// }
+
+header {
+    height: 8rem;
+}
+main {
+   display: flex;
+   align-items: center;
 }
 
-
+.container {
+ background-color: violet;
+}
