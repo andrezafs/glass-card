@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +40,19 @@
   justify-content: space-between;
 }
 
+h2, h1 {
+  color: transparent;
+  text-shadow: 0rem 0.1rem 0 rgba(17, 16, 16, 0.17);
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
 @keyframes orbit {
   from {
     -webkit-transform: rotate(0deg);
@@ -47,6 +61,10 @@
     -webkit-transform: rotate(360deg);
   }
 }
+img {
+  width: 3rem;
+}
+
 .container-card {
   position: relative;
   display: flex;
@@ -102,44 +120,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-h1 {
-  font-weight: 400;
-  color: transparent;
-  text-shadow: 0rem 0.1rem 0 rgba(17, 16, 16, 0.17);
-}
-
-img {
-  width: 3rem;
-}
-
-h2 {
-  text-transform: uppercase;
-  color: transparent;
-  text-shadow: 0rem 0.1rem 0 rgba(17, 16, 16, 0.151);
-}
-
-.card-back {
-  transform: rotate(-50deg);
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 0.8rem 3.2rem 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(0.75rem);
-  -webkit-backdrop-filter: blur(0.75rem);
   transform: rotateY(180deg);
 }
-.card-back:hover {
-  background-color: black;
+.card .card-back:hover {
   transform: rotate(5deg);
 }
-.card-back .colum {
+.card .colum {
   width: 100%;
   height: 20%;
   background-color: rgba(17, 16, 16, 0.17);
 }
-.card-back .cvv {
-  display: flex;
-  justify-content: space-between;
+
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  text-transform: uppercase;
 }
 
 .card .card-front, .card .card-back {
@@ -158,6 +155,11 @@ h2 {
 .card .card-front, .card .card-back {
   flex-direction: column;
   justify-content: space-between;
+}
+
+h1, h2 {
+  color: transparent;
+  text-shadow: 0rem 0.1rem 0 rgba(17, 16, 16, 0.17);
 }
 
 header {

@@ -1,46 +1,46 @@
+@import "mixins";
+@import "fonts";
+@import "animations";
 
-@import 'mixins';
-@import 'animations';
-
-
+img {
+    width: 3rem;
+}
 .container-card {
     position: relative;
     @include flex;
     padding: 5rem;
-  
+
     .circle {
-        
         &::after {
-        
-            position:absolute;
-           content: '';
-           width: 15rem;
-           height: 15rem;
-           top: -6rem;
-           left: 26rem;
-           border-radius: 50%;
-           background-color: rgba(231, 65, 65, 0.849);
-          
+            position: absolute;
+            content: "";
+            width: 15rem;
+            height: 15rem;
+            top: -6rem;
+            left: 26rem;
+            border-radius: 50%;
+            background-color: rgba(231, 65, 65, 0.849);
         }
-        
+
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             top: 7rem;
-           left: 1rem;
-           
-            background: linear-gradient(90deg, rgba(242,137,114,0.7382645803698435) 20%, rgba(242,137,114,1) 100%);
+            left: 1rem;
+
+            background: linear-gradient(
+                90deg,
+                rgba(242, 137, 114, 0.7382645803698435) 20%,
+                rgba(242, 137, 114, 1) 100%
+            );
             // background:#F28972;
             // background-color:rgb(35, 219, 213);
             width: 10rem;
             height: 10rem;
             border-radius: 50%;
-            
         }
-        
     }
 }
-
 
 .container-elements {
     height: 100%;
@@ -48,69 +48,35 @@
     background-color: yellow;
 }
 .card {
-
     @include size(30rem, 20rem);
     border-radius: 1rem;
     transition: transform 0.8s;
-	transform-style: preserve-3d;
+    transform-style: preserve-3d;
     position: relative;
     &:hover {
         transform: rotateY(180deg);
     }
-   
+
     .card-front {
         @extend %style-cards;
         @extend %flex-card;
         @include flex;
-        @include flex-card (flex-start);
-
+        @include flex-card(flex-start);
     }
-
     .card-back {
         @extend %style-cards;
         @include flex;
         @extend %flex-card;
+        transform: rotateY(180deg);
 
+        &:hover {
+            transform: rotate(5deg);
+        }
+    }
+
+    .colum {
+        width: 100%;
+        height: 20%;
+        background-color: rgba(17, 16, 16, 0.17);
     }
 }
-       
-    
-      
-        h1 {
-
-            font-weight: 400;
-            color: transparent;
-            text-shadow: 0rem  .1rem 0 rgba(17,16,16,0.17);
-        }
-        img {
-            width: 3rem;
-        }
-        h2{
-            text-transform: uppercase; 
-            color: transparent;
-            text-shadow: 0rem  .1rem 0 rgba(17, 16, 16, 0.151);
-        }
-    
-
-    .card-back {
-        transform: rotate(-50deg);
-        background: rgba( 255, 255, 255, 0.25 );
-        box-shadow: 0 .8rem 3.2rem 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 0.75rem );
-        -webkit-backdrop-filter: blur( 0.75rem);
-       transform: rotateY(180deg);
-       &:hover {
-      background-color: black;
-        transform: rotate(5deg);
-     
-    }
-        .colum {
-            width: 100%;
-            height: 20%;
-            background-color: rgba(17,16,16,0.17);
-        }
-        .cvv {
-            display: flex;
-            justify-content: space-between;
-        }
-    }

@@ -2,7 +2,6 @@
 @mixin font-style ($size, $weigth, $color) {
     font-size:$size;
     font-weight:$font-weigth;
-    color :$color;
 }
 @mixin flex {
     display: flex;
@@ -37,4 +36,9 @@
 %flex-card {
     flex-direction: column;
     justify-content: space-between;
+}
+
+%font-style {
+    color: transparent;
+    text-shadow: 0rem  .1rem 0 rgba(17,16,16,0.17);
 }
