@@ -28,13 +28,12 @@
 // }
 
 header {
+    background-color: wheat;
     height: 8rem;
 }
 main {
-   display: flex;
-   align-items: center;
-}
+  @include flex; 
+  
 
-.container {
- background-color: violet;
-}
+  }
+

@@ -1,8 +1,46 @@
+
+@import 'mixins';
+@import 'animations';
+
+
 .container-card {
-    height: 100%;
-    background-color: white;
-    width: 100%;;
+    position: relative;
+    @include flex;
+    padding: 5rem;
+  
+    .circle {
+        
+        &::after {
+        
+            position:absolute;
+           content: '';
+           width: 15rem;
+           height: 15rem;
+           top: -6rem;
+           left: 26rem;
+           border-radius: 50%;
+           background-color: rgba(231, 65, 65, 0.849);
+          
+        }
+        
+        &::before {
+            content: '';
+            position: absolute;
+            top: 7rem;
+           left: 1rem;
+           
+            background: linear-gradient(90deg, rgba(242,137,114,0.7382645803698435) 20%, rgba(242,137,114,1) 100%);
+            // background:#F28972;
+            // background-color:rgb(35, 219, 213);
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            
+        }
+        
+    }
 }
+
 
 .container-elements {
     height: 100%;
@@ -10,28 +48,17 @@
     background-color: yellow;
 }
 .card {
+
+    @include size(30rem, 20rem);
     border-radius: 1rem;
-    width: 30rem;
-    height: 20rem;
     transition: transform 0.8s;
 	transform-style: preserve-3d;
     position: relative;
     &:hover {
-        
-    
         transform: rotateY(180deg);
     }
+  
     
-    &::before {
-        content: '';
-        width: 20rem;
-        height: 20rem;
-        border-radius: 50%;
-        background: white;
-        top: 0;
-        left: 0;
-    }
-
    
 }
 
