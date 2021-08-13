@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,600&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
   font-weight: 62.5%;
-  font-family: "PT Sans", sans-serif;
 }
 
 @media (max-width: 900px) {
@@ -20,6 +21,17 @@
   }
   to {
     -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes animation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 .card .card-back, .card .card-front {
@@ -72,11 +84,18 @@ h3, h2, h1 {
 
 h1 {
   font-size: 1.6rem;
+  font-family: "PT Sans", sans-serif;
 }
 
 h2 {
   font-size: 1.4rem;
   text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
 }
 
 @keyframes orbit {
@@ -87,32 +106,42 @@ h2 {
     -webkit-transform: rotate(360deg);
   }
 }
+@keyframes animation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 img {
   width: 3rem;
 }
 
 .container-card {
+  width: 100%;
+  transform: rotate(-5deg);
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5rem;
 }
 .container-card .circle::after {
   position: absolute;
   content: "";
   width: 15rem;
   height: 15rem;
-  top: -6rem;
-  left: 26rem;
+  top: 10rem;
+  left: 10rem;
   border-radius: 50%;
-  background-color: rgba(231, 65, 65, 0.849);
+  background: linear-gradient(90deg, #76e0e7 20%, #76e0e7 100%);
 }
 .container-card .circle::before {
   content: "";
   position: absolute;
-  top: 7rem;
-  left: 1rem;
+  top: -10em;
+  left: 25rem;
   background: linear-gradient(90deg, rgba(242, 137, 114, 0.7382645804) 20%, #f28972 100%);
   width: 10rem;
   height: 10rem;
@@ -120,9 +149,8 @@ img {
 }
 
 .container-elements {
-  height: 100%;
-  width: 100%;
-  background-color: yellow;
+  margin-left: 2rem;
+  margin-right: 5rem;
 }
 
 .card {
@@ -147,9 +175,6 @@ img {
   align-items: center;
   justify-content: center;
   transform: rotateY(180deg);
-}
-.card .card-back:hover {
-  transform: rotate(5deg);
 }
 .card .colum {
   width: 100%;
@@ -183,11 +208,18 @@ h1, h2, h3 {
 
 h1 {
   font-size: 1.6rem;
+  font-family: "PT Sans", sans-serif;
 }
 
 h2 {
   font-size: 1.4rem;
   text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
 }
 
 .card .card-front, .card .card-back {
@@ -214,15 +246,16 @@ h1, h2, h3 {
   text-shadow: 0rem 0.1rem 0 rgba(17, 16, 16, 0.17);
 }
 
-header {
-  background-color: wheat;
-  height: 8rem;
+header, .main-container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
 }
 
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.main-container {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=styles.css.map */

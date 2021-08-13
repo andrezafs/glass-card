@@ -26,13 +26,16 @@
  
 // }
 
-header {
-    background-color: wheat;
-    height: 8rem;
-}
-main {
-  @include flex; 
+header, .main-container {
+  display: flex; 
+  max-width: 1200px; 
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
   
+}
 
-  }
+.main-container {
+  height: 100vh;
+}
 

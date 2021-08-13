@@ -3,3 +3,14 @@
     from { -webkit-transform:rotate(0deg) } 
     to { -webkit-transform:rotate(360deg) } }
     
+    @keyframes animation {
+        0% {
+            transform: translateY(0px);
+        } 
+        50% {
+            transform: translateY(20px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }

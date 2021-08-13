@@ -6,27 +6,31 @@ img {
     width: 3rem;
 }
 .container-card {
+    width: 100%;
+    transform: rotate(-5deg);
     position: relative;
-    @include flex;
-    padding: 5rem;
+    display: flex;
 
     .circle {
-        &::after {
+    
+        //  animation: orbit 60s ease-out infinite;
+         &::after {
             position: absolute;
             content: "";
             width: 15rem;
             height: 15rem;
-            top: -6rem;
-            left: 26rem;
+            top: 10rem;
+            left: 10rem;
             border-radius: 50%;
-            background-color: rgba(231, 65, 65, 0.849);
+            background: linear-gradient(90deg, rgba(118,224,231,1) 20%, rgba(118,224,231,1) 100%);
+            
         }
 
         &::before {
             content: "";
             position: absolute;
-            top: 7rem;
-            left: 1rem;
+            top: -10em;
+            left: 25rem;
 
             background: linear-gradient(
                 90deg,
@@ -43,11 +47,12 @@ img {
 }
 
 .container-elements {
-    height: 100%;
-    width: 100%;
-    background-color: yellow;
+  margin-left: 2rem;
+  margin-right: 5rem;
+  
 }
 .card {
+  
     @include size(30rem, 20rem);
     border-radius: 1rem;
     transition: transform 0.8s;
@@ -68,10 +73,6 @@ img {
         @include flex;
         @extend %flex-card;
         transform: rotateY(180deg);
-
-        &:hover {
-            transform: rotate(5deg);
-        }
     }
 
     .colum {
