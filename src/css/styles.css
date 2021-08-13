@@ -21,6 +21,24 @@
     -webkit-transform: rotate(360deg);
   }
 }
+.card .card-back, .card .card-front {
+  position: absolute;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: inherit;
+  height: inherit;
+  backface-visibility: hidden;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0.8rem 3.2rem 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.75rem);
+  -webkit-backdrop-filter: blur(0.75rem);
+}
+
+.card .card-back, .card .card-front {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @keyframes orbit {
   from {
     -webkit-transform: rotate(0deg);
@@ -74,34 +92,29 @@
 .card:hover {
   transform: rotateY(180deg);
 }
-
-.card-front {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 0.8rem 3.2rem 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(0.75rem);
-  -webkit-backdrop-filter: blur(0.75rem);
-}
-
-.card-front, .card-back {
-  position: absolute;
-  border-radius: 1rem;
+.card .card-front {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 2rem;
-  width: inherit;
-  height: inherit;
-  backface-visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
 }
-.card-front h1, .card-back h1 {
+.card .card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
   font-weight: 400;
   color: transparent;
   text-shadow: 0rem 0.1rem 0 rgba(17, 16, 16, 0.17);
 }
-.card-front img, .card-back img {
+
+img {
   width: 3rem;
 }
-.card-front h2, .card-back h2 {
+
+h2 {
   text-transform: uppercase;
   color: transparent;
   text-shadow: 0rem 0.1rem 0 rgba(17, 16, 16, 0.151);
@@ -129,28 +142,22 @@
   justify-content: space-between;
 }
 
-.circle {
-  animation: orbit 60s ease-out infinite;
+.card .card-front, .card .card-back {
   position: absolute;
-  width: 40rem;
-  height: 50%;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: inherit;
+  height: inherit;
+  backface-visibility: hidden;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0.8rem 3.2rem 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.75rem);
+  -webkit-backdrop-filter: blur(0.75rem);
 }
-.circle .top {
-  position: relative;
-  background: linear-gradient(90deg, #76e0e7 20%, #76e0e7 100%);
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  top: 10rem;
-}
-.circle .bottom {
-  position: absolute;
-  right: 2rem;
-  background: linear-gradient(90deg, rgba(242, 137, 114, 0.7382645804) 20%, #f28972 100%);
-  width: 15rem;
-  height: 15rem;
-  border-radius: 50%;
-  bottom: 5rem;
+
+.card .card-front, .card .card-back {
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
