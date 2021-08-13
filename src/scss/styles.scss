@@ -1,7 +1,18 @@
 @import 'reset';
 
 
-
+.container {
+    
+    &::before {
+        content: "";
+        width: 30rem;
+        height: 30rem;
+        border-radius: 50%;
+        background-color: white;
+        top:0;
+        right: 0;
+    }
+}
     
 .container {
     // transform: rotateY(180deg);
