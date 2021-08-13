@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-
+@import 'mixins';
 
 h1 {
-    font-weight: 400;
     @extend %font-style;
+    font-size: 1.6rem
 }
 
 h2{
+    font-size: 1.4rem;
     text-transform: uppercase; 
+    @extend %font-style;
+}
+
+h3 {
     @extend %font-style;
 }

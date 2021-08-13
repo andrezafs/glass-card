@@ -40,16 +40,42 @@
   justify-content: space-between;
 }
 
-h2, h1 {
+h3, h2, h1 {
+  font-weight: 400;
+  color: transparent;
+  text-shadow: 0rem 0.1rem 0 rgba(17, 16, 16, 0.17);
+}
+
+.card .card-back, .card .card-front {
+  position: absolute;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: inherit;
+  height: inherit;
+  backface-visibility: hidden;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0.8rem 3.2rem 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.75rem);
+  -webkit-backdrop-filter: blur(0.75rem);
+}
+
+.card .card-back, .card .card-front {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h3, h2, h1 {
+  font-weight: 400;
   color: transparent;
   text-shadow: 0rem 0.1rem 0 rgba(17, 16, 16, 0.17);
 }
 
 h1 {
-  font-weight: 400;
+  font-size: 1.6rem;
 }
 
 h2 {
+  font-size: 1.4rem;
   text-transform: uppercase;
 }
 
@@ -131,11 +157,36 @@ img {
   background-color: rgba(17, 16, 16, 0.17);
 }
 
-h1 {
+.card .card-front, .card .card-back {
+  position: absolute;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: inherit;
+  height: inherit;
+  backface-visibility: hidden;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0.8rem 3.2rem 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.75rem);
+  -webkit-backdrop-filter: blur(0.75rem);
+}
+
+.card .card-front, .card .card-back {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1, h2, h3 {
   font-weight: 400;
+  color: transparent;
+  text-shadow: 0rem 0.1rem 0 rgba(17, 16, 16, 0.17);
+}
+
+h1 {
+  font-size: 1.6rem;
 }
 
 h2 {
+  font-size: 1.4rem;
   text-transform: uppercase;
 }
 
@@ -157,7 +208,8 @@ h2 {
   justify-content: space-between;
 }
 
-h1, h2 {
+h1, h2, h3 {
+  font-weight: 400;
   color: transparent;
   text-shadow: 0rem 0.1rem 0 rgba(17, 16, 16, 0.17);
 }

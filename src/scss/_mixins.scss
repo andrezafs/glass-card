@@ -1,8 +1,5 @@
 
-@mixin font-style ($size, $weigth, $color) {
-    font-size:$size;
-    font-weight:$font-weigth;
-}
+
 @mixin flex {
     display: flex;
     align-items: center;
@@ -39,6 +36,7 @@
 }
 
 %font-style {
+    font-weight: 400;
     color: transparent;
     text-shadow: 0rem  .1rem 0 rgba(17,16,16,0.17);
 }
