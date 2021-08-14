@@ -7,7 +7,12 @@
     font-weight: 62.5%;
     
 }
-
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
 @media (max-width:900px) {
 
     .container {

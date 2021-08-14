@@ -23,8 +23,34 @@
 
 .container-elements {
     color: white;
-    text-align: right;  font-family: 'Poppins', sans-serif;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 50rem;
+        height: 50rem;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.26);
+        top: -60rem;
+        left: -15rem;
+    }
+    &::before {
+        position: absolute;
+        content: '';
+        width: 25rem;
+        height: 25rem;
+        border-radius: 50%;
+        background: rgba(255, 255, 0, 0.233);
+        top: -30rem;
+        left: 3rem;
+    }
+
+
+     text-align: right;  font-family: 'Poppins', sans-serif;
+    
+    
     .text {
+    
         h1 {
             
           
