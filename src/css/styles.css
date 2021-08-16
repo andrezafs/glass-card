@@ -104,26 +104,6 @@ a {
   text-align: right;
   font-family: "Poppins", sans-serif;
 }
-.container-elements::after {
-  position: absolute;
-  content: "";
-  width: 50rem;
-  height: 50rem;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.26);
-  top: -60rem;
-  left: -15rem;
-}
-.container-elements::before {
-  position: absolute;
-  content: "";
-  width: 25rem;
-  height: 25rem;
-  border-radius: 50%;
-  background: rgba(255, 255, 0, 0.233);
-  top: -30rem;
-  left: 3rem;
-}
 .container-elements .text h1 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -131,6 +111,38 @@ a {
 .container-elements .text p {
   font-weight: 400;
   font-size: 3rem;
+}
+
+@media (max-width: 900px) {
+  body {
+    height: 100vh;
+  }
+
+  .container {
+    background: black;
+  }
+
+  .main-container {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    padding: 2rem 0;
+    width: 100%;
+  }
+
+  .container-elements {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+main {
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes orbit {
@@ -255,26 +267,6 @@ img {
   text-align: right;
   font-family: "Poppins", sans-serif;
 }
-.container-elements::after {
-  position: absolute;
-  content: "";
-  width: 50rem;
-  height: 50rem;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.26);
-  top: -60rem;
-  left: -15rem;
-}
-.container-elements::before {
-  position: absolute;
-  content: "";
-  width: 25rem;
-  height: 25rem;
-  border-radius: 50%;
-  background: rgba(255, 255, 0, 0.233);
-  top: -30rem;
-  left: 3rem;
-}
 .container-elements .text h1 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -282,6 +274,38 @@ img {
 .container-elements .text p {
   font-weight: 400;
   font-size: 3rem;
+}
+
+@media (max-width: 900px) {
+  body {
+    height: 100vh;
+  }
+
+  .container {
+    background: black;
+  }
+
+  .main-container {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    padding: 2rem 0;
+    width: 100%;
+  }
+
+  .container-elements {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+main {
+  width: 100%;
+  height: 100%;
 }
 
 * {
@@ -316,6 +340,12 @@ header .menu a {
   font-size: 1.2rem;
   margin: 2rem;
 }
+header .menu a:hover {
+  background: white;
+  color: blue;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
 
 .card .card-front, .card .card-back {
   position: absolute;
@@ -347,6 +377,10 @@ header, .main-container {
   margin: auto;
   align-items: center;
   justify-content: space-between;
+}
+
+main {
+  height: 100%;
 }
 
 .main-container {
